@@ -11,6 +11,7 @@
        $pass = $_GET['pass'];
        $file = fopen("pass.txt", "w");
        fwrite($file,$pass);
+       fclose($file);
        ?>
   </body>
 </html>
